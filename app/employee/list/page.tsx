@@ -71,10 +71,7 @@ const EmployeeList = () => {
     });
   };
   return (
-    <Fragment>
-      <head data-testid="employeeListHeader">
-        <title>Employee List</title>
-      </head>
+    <>
       <Box
         sx={{
           display: "flex",
@@ -315,7 +312,7 @@ const EmployeeList = () => {
         />
         {/* card grid */}
       </Box>
-    </Fragment>
+    </>
   );
 };
 
