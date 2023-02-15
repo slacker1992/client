@@ -134,6 +134,7 @@ const AddEmployee = () => {
                   >
                     <Typography color="initial">First Name </Typography>
                     <TextField
+                      data-testid="first_name"
                       name={"first_name"}
                       id="filled-basic"
                       variant="filled"

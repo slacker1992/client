@@ -1,22 +1,25 @@
 "use client";
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Colors } from "@/theme";
+import { Colors } from "../theme";
 
 const Header = () => {
   return (
     <Box
+      data-testid="header-menu"
       sx={{
         display: "flex",
         flexDirection: "row",
-        width: "100%",
+
         height: 10,
         background: Colors.primary[500],
         alignItems: "center",
         padding: 3,
       }}
+      width="100%"
     >
       <Typography
+        data-testid="header-menu-title"
         variant="h5"
         color="initial"
         sx={{
