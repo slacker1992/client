@@ -147,13 +147,13 @@ const EmployeeList = () => {
                       {/* @ts-ignore */}
                       <TableCell align="center">
                         {/* @ts-ignore */}
-                        {data?.Gender === "M" ? "Male" : "Female"}
+                        {data?.gender === "M" ? "Male" : "Female"}
                       </TableCell>
 
                       {/* @ts-ignore */}
                       <TableCell align="center">
                         {/* @ts-ignore */}
-                        <Link href={`/employee/list/id/${data?.id}`}>
+                        <Link href={`/employee/edit/id/${data?.id}`}>
                           <Button
                             sx={{
                               color: "#000",
@@ -169,6 +169,8 @@ const EmployeeList = () => {
                           </Button>
                         </Link>
                         <IconButton
+                          // @ts-ignore
+                          onClick={() => handleDelete(data?.id)}
                           sx={{
                             color: theme.palette.getContrastText(
                               Colors.red[500]

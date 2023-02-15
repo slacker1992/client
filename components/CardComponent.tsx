@@ -81,7 +81,7 @@ const CardComponent = ({
           >
             <DeleteOutline />
           </IconButton>
-          <Link href={`/employee/list/id/${id}`}>
+          <Link href={`/employee/edit/id/${id}`}>
             <IconButton
               sx={{
                 color: "#fff",
